@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- project-specific ---
+# Dataset: PlantVillage (~382 MB) - download into data/ separately
+data/
+# Trained checkpoint (~43 MB) - produced by `python -m src.train`
+models/*.pth
+# Runtime upload scratch from the FastAPI service
+uploads/
+# Agent/editor local config
+.claude/
